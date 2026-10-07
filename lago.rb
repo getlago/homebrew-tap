@@ -5,13 +5,13 @@
 class Lago < Formula
   desc "Official CLI for the Lago billing platform"
   homepage "https://getlago.com"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getlago/lago-cli/releases/download/v1.0.1/lago_1.0.1_darwin_amd64.tar.gz"
-      sha256 "b5ec452310373f737d287500bc81f3c9995545c70ca475faa0be81623b824101"
+      url "https://github.com/getlago/lago-cli/releases/download/v1.0.2/lago_1.0.2_darwin_amd64.tar.gz"
+      sha256 "4c0ca7ed52d32b93c68de64593bdbed90ddfb228b7d5e0549f9cfadf3ab25f27"
 
       define_method(:install) do
         bin.install "lago"
@@ -22,8 +22,8 @@ class Lago < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getlago/lago-cli/releases/download/v1.0.1/lago_1.0.1_darwin_arm64.tar.gz"
-      sha256 "8635dada724c3d54f86690a4a185ad5526b9483575c0bfda1408f9be12a635af"
+      url "https://github.com/getlago/lago-cli/releases/download/v1.0.2/lago_1.0.2_darwin_arm64.tar.gz"
+      sha256 "7e2f1cacf1481fc1cad1516f5b55cc5b9fd4b292907ef779addab8b8ebeaea6b"
 
       define_method(:install) do
         bin.install "lago"
@@ -37,8 +37,8 @@ class Lago < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getlago/lago-cli/releases/download/v1.0.1/lago_1.0.1_linux_amd64.tar.gz"
-      sha256 "c22496eadf1b9faf0c204d8740925a59a0dc2f7515874478def89271f162a467"
+      url "https://github.com/getlago/lago-cli/releases/download/v1.0.2/lago_1.0.2_linux_amd64.tar.gz"
+      sha256 "fbf8578f55a284820d4eed6c042ac18c63654d32b844fb9847880f9cd7209935"
       define_method(:install) do
         bin.install "lago"
         man1.install "man/lago.1"
@@ -48,8 +48,8 @@ class Lago < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getlago/lago-cli/releases/download/v1.0.1/lago_1.0.1_linux_arm64.tar.gz"
-      sha256 "933bef9d51a2572b0c3b7f46489eb25123319f751eb3fc8ebc707f0ec51d5da0"
+      url "https://github.com/getlago/lago-cli/releases/download/v1.0.2/lago_1.0.2_linux_arm64.tar.gz"
+      sha256 "ec317047636d30ed3f163b38af4403dc72459ce6de982c58946f30d00eb742cf"
       define_method(:install) do
         bin.install "lago"
         man1.install "man/lago.1"
